@@ -690,8 +690,8 @@ function StudyResults({ inputs, onPublish }) {
             color: btn.color, fontSize:13, fontFamily:'Cairo,sans-serif',
             cursor:'pointer', fontWeight:600, transition:'all 0.2s',
           }}
-          onMouseEnter={e => e.target.style.background = `${btn.color}35`}
-          onMouseLeave={e => e.target.style.background = `${btn.color}20`}
+          onMouseEnter={e => e.currentTarget.style.background = `${btn.color}35`}
+          onMouseLeave={e => e.currentTarget.style.background = `${btn.color}20`}
           >
             {btn.label}
           </button>
@@ -959,8 +959,8 @@ export default function App() {
               transition:'all 0.2s',
               animation:'glow-pulse 2.5s infinite',
             }}
-            onMouseEnter={e => e.target.style.transform='translateY(-2px)'}
-            onMouseLeave={e => e.target.style.transform='none'}
+            onMouseEnter={e => e.currentTarget.style.transform='translateY(-2px)'}
+            onMouseLeave={e => e.currentTarget.style.transform='none'}
             >
               🚀 ابدأ دراستك مجاناً
             </button>
@@ -970,8 +970,8 @@ export default function App() {
               color:'#10B981', fontSize:15, fontFamily:'Cairo,sans-serif',
               cursor:'pointer', fontWeight:600, transition:'all 0.2s',
             }}
-            onMouseEnter={e => e.target.style.background='rgba(16,185,129,0.2)'}
-            onMouseLeave={e => e.target.style.background='rgba(16,185,129,0.1)'}
+            onMouseEnter={e => e.currentTarget.style.background='rgba(16,185,129,0.2)'}
+            onMouseLeave={e => e.currentTarget.style.background='rgba(16,185,129,0.1)'}
             >
               🏪 Business Mall
             </button>
@@ -1133,8 +1133,8 @@ export default function App() {
                           fontSize:14, fontFamily:'Cairo,sans-serif', outline:'none',
                           direction:'rtl', transition:'border-color 0.2s',
                         }}
-                        onFocus={e => e.target.style.borderColor='rgba(59,130,246,0.5)'}
-                        onBlur={e => e.target.style.borderColor='rgba(59,130,246,0.2)'}
+                        onFocus={e => e.currentTarget.style.borderColor='rgba(59,130,246,0.5)'}
+                        onBlur={e => e.currentTarget.style.borderColor='rgba(59,130,246,0.2)'}
                         autoFocus
                       />
                     </div>
